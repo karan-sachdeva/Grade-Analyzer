@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="histogram.css">
+    <script src="calculate.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>Histogram Generator</h1>
+    <form><input type="file" id = "fileInput"></form>
+    </header>
+    <main>
+    <div class="section" id ="box-1">
+        <h3 class="sub-headings">Lower Bounds</h3>
+        <form class = "content">
+            <label>Max</label><input type="number" value="100.00" id = "Maxinput"><br>
+            <label>A+</label><input type="number" value="95.00" id = "A+input"><br>
+            <label>A</label><input type="number" value="90.00" id = "Ainput"><br>
+            <label>A-</label><input type="number" value="85.00" id = "A-input"><br>
+            <label>B+</label><input type="number" value="80.00" id = "B+input"><br>
+            <label>B</label><input type="number" value="75.00" id = "Binput"><br>
+            <label>B-</label><input type="number" value="70.00" id = "B-input"><br>
+            <label>C+</label><input type="number" value="65.00" id = "C+input"><br>
+            <label>C</label><input type="number" value="60.00" id = "Cinput"><br>
+            <label>C-</label><input type="number" value="55.00" id = "C-input"><br>
+            <label>D</label><input type="number" value="50.00" id = "Dinput"><br>
+            <label>F</label><input type="number" value="0.00" id = "Finput"><br>
+        </form>
+    </div>
+    <div class="section" id = "box-2">
+        <h3 class="sub-headings">Histogram</h3>
+        <div class = "content">
+            <p id = "A+">A+</p>
+            <p id = "A">A</p>
+            <p id = "A-">A-</p>
+            <p id = "B+">B+</p>
+            <p id = "B">B</p>
+            <p id = "B-">B-</p>
+            <p id = "C+">C+</p>
+            <p id = "C">C</p>
+            <p id = "C-">C-</p>
+            <p id = "D">D</p>
+            <p id = "F">F</p>
+        </div>
+    </div>
+    <div class="section" id = "box-3">
+        <h3 class="sub-headings">Stats</h3>
+        <div class = "content">
+            <p id = "Highest">Highest</p>
+            <p id = "Lowest">Lowest</p>
+            <p id = "Mean">Mean</p>
+            <p id = "Median">Median</p>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
